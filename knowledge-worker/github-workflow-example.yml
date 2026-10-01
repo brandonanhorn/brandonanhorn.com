@@ -19,7 +19,7 @@
 #        CLOUDFLARE_API_TOKEN   (Edit Cloudflare Workers template)
 #        CLOUDFLARE_ACCOUNT_ID
 #
-#      No token is needed to check out the Blog repo — it is public, and the
+#      No token is needed to check out the brandonanhorn.com repo — it is public, and the
 #      job's own GITHUB_TOKEN can read it.
 #
 # From then on: save a note, wait for the plugin's commit, and about thirty
@@ -48,7 +48,7 @@ jobs:
       - name: Check out the worker
         uses: actions/checkout@v4
         with:
-          repository: brandonanhorn/Blog
+          repository: brandonanhorn/brandonanhorn.com
           path: blog
 
       - uses: actions/setup-node@v4
